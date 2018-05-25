@@ -40,15 +40,15 @@
             <form>
                 <div id="norm">
                     <label>Username</label>
-                    <input type="text" name="username" pattern="[a-z]{1,15}" title="Username should only contain lowercase letters. e.g. John and size less then 16." placeholder="Your Name...">
+                    <input type="text" name="username" pattern="[a-z]{1,15}" maxlength="15" title="Username should only contain lowercase letters. e.g. John" placeholder="Your Name..." required>
                     <br>
                     <label for="dob">Date of birth</label>
-                    <input type="datetime-local" id="dob" name="dob">
+                    <input type="datetime-local" id="dob" name="dob" required>
                     <br>
                     <label>E-mail</label>
-                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="email" name="email" placeholder="E-mail" required>
                     <label>Mobile Number</label>
-                    <input type="tel" name="phone" pattern="[0-9]{1,10}" maxlength="10" title="Numbers only" placeholder="Mobile Number"><br>
+                    <input type="tel" name="phone" pattern="[0-9]{1,10}" required title="Numbers only" maxlength="10" placeholder="Mobile Number"><br>
                     <label>Gender</label>
                 </div>
                 <div id="check">
@@ -73,7 +73,7 @@
                     <label>Public Profile</label>
                     <input type="url" placeholder="Ex Skype,Facebook">
                     <label>Address</label>
-                    <textarea rows="8" cols="40" placeholder="Address with pin code"></textarea><br>
+                    <textarea rows="8" required cols="40" placeholder="Address with pin code"></textarea><br>
                     <input type="submit" value="Submit">
                     <input type="reset" value="Reset">
                 </div>
